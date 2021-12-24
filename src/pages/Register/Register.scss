@@ -1,0 +1,71 @@
+.register {
+  max-width: 440px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register__logo-link {
+  align-self: center;
+}
+
+.register__logo{
+  width: 250px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.register__heading {
+  font-size: 32px;
+  margin: 20px 0;
+  align-self: center;
+  text-decoration: underline;
+}
+
+.register__field {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 16px;
+  &:focus {
+    border: 2px solid #01959F;
+    outline: none;
+  }
+}
+
+.register__button {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #01959F;
+  color: white;
+  font-size: 16px;
+  border: 2px solid #01959F;
+  font-weight: 500;
+  &:hover {
+    border: 2px solid lightgrey;
+    cursor: pointer;
+  }
+  &:active {
+    border: 2px solid white;
+  }
+}
+
+.register__reverse-text {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.register__reverse-link {
+  color: #01959F;
+}

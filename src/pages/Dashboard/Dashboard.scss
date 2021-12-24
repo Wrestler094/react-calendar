@@ -1,0 +1,65 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 14.1%);
+  grid-gap: 2px;
+  border-radius: 16px;
+}
+
+.calendar__head {
+  grid-column: 1 / 8;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  user-select: none;
+}
+
+.calendar__month-change:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.calendar__prev-day {
+  background-color: #FAFAFA;
+}
+
+.calendar__day-name {
+  min-height: 40px;
+  align-self: center;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.calendar__day {
+  position: relative;
+  min-height: 120px;
+  background-color: #fff;
+  padding: 4px;
+  &:hover {
+    background-color: #FAFAFA;
+    cursor: pointer;
+  }
+}
+
+.calendar__date {
+  padding-left: 6px;
+}
+
+// DashboardDay.js
+
+.calendar__task {
+  margin: 2px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  background-color: rgb(233, 233, 233);
+  border-radius: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 4px;
+  padding-right: 4px;
+  &:hover {
+    background-color: rgb(202, 202, 202);
+  }
+}

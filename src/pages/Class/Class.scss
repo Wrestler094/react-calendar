@@ -1,0 +1,107 @@
+.class__add {
+  padding: 0 20px 2px;
+}
+
+.class-heading {
+  padding: 0 50px;
+}
+
+.class-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.students-check {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  margin: 0;
+  padding: 10px 25px 10px;
+  border-bottom: 2px solid #FAFAFA;
+  &:hover {
+    background-color: #FAFAFA;
+    cursor: pointer;
+  }
+}
+
+.students-check:nth-child(odd) {
+  border-right: 2px solid #FAFAFA;
+}
+
+//.students-checkbox-position {
+//  position: relative;
+//  margin-left: auto;
+//  &:before {
+//    content: "";
+//    position: absolute;
+//    box-sizing: border-box;
+//    border: 2px solid #01959F;
+//    border-radius: 6px;
+//    width: 20px;
+//    height: 20px;
+//    top: 2px;
+//    left: -20px;
+//  }
+//}
+//
+//.students-checkbox:checked + .students-checkbox-position:after {
+//  content: "";
+//  position: absolute;
+//  background-color: #01959F;
+//  background-image: url(../../images/check.png);
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  background-size: 10px;
+//  border-radius: 6px;
+//  width: 20px;
+//  height: 20px;
+//  top: 2px;
+//  left: -20px;
+//}
+
+.students-checkbox--before {
+  position: relative;
+  margin-left: auto;
+  &:before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #01959F;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.students-checkbox--after {
+  &:after {
+  content: "";
+  position: absolute;
+  background-color: #01959F;
+  background-image: url(../../images/check.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  }
+}
+
+.class-page__check-class {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.class-button {
+  height: 28px;
+  font-size: 16px;
+}
+
+.students-free {
+  padding: 0 20px;
+}

@@ -1,0 +1,46 @@
+.groups__free {
+  padding-bottom: 20px;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.group__image {
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.group__heading {
+  font-size: 20px;
+  margin: 0;
+}
+
+.group__students-number {
+  margin: 3px 0 8px;
+  padding-left: 25px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/students.png);
+    width: 20px;
+    height: 16px;
+    top: 3px;
+    left: 0;
+  }
+}
+
+.groups__add {
+  padding: 0 20px 20px 20px;
+}
+
+.groups__wrapper {
+  display: flex;
+  align-items: center;
+}
